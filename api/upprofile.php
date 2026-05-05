@@ -1,5 +1,5 @@
 <?php
-include "connect.php"; // Include kết nối cơ sở dữ liệu
+require_once __DIR__ . "/connect.php"; // Include kết nối cơ sở dữ liệu
 
 // Kiểm tra kết nối cơ sở dữ liệu
 if (!$conn) {

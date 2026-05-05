@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $query = "SELECT *, SUM(tongtien) as tongtienthang, MONTH(`ngaydat`) as thang FROM `donhang` GROUP BY YEAR(`ngaydat`), MONTH(`ngaydat`)";
 $data = mysqli_query($conn, $query);
 $result = array();

@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 

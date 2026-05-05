@@ -1,6 +1,6 @@
 
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 if(isset($_POST['submit_password']) && $_POST['email'] )
 {
   $email=$_POST['email'];

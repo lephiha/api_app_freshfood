@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Nhận giá trị status từ POST
 $status = $_POST['status'];

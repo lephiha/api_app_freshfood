@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Nhận giá trị từ POST và kiểm tra
 $iduser = isset($_POST['iduser']) ? (int)$_POST['iduser'] : 0;

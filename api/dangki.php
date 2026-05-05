@@ -1,10 +1,11 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $email = $_POST['email'];
 $pass = $_POST['pass'];
 $username = $_POST['username'];
 $mobile = $_POST['mobile'];
 $uid = $_POST['uid'];
+$diachi = isset($_POST['diachi']) ? $_POST['diachi'] : '';
 
 
 //check data
@@ -17,7 +18,8 @@ $numrow = mysqli_num_rows($data);
         'message' => "Email đã tồn tại !"
      ];
    }else{
-    $query = 'INSERT INTO `user`( `email`, `pass`, `username`, `mobile`,`uid`) VALUES ("'.$email.'","'.$pass.'","'.$username.'","'.$mobile.'","'.$uid.'")';
+    $query = 'INSERT INTO `user`(`email`, `pass`, `username`, `mobile`, `uid`, `diachi`) 
+              VALUES ("'.$email.'","'.$pass.'","'.$username.'","'.$mobile.'","'.$uid.'","'.$diachi.'")';
     $data = mysqli_query($conn, $query);
 
          if($data == true){

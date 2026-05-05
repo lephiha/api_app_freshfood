@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $query = "SELECT `trangthai`, COUNT(*) AS soLuong, MONTH(`ngaydat`) AS thang FROM `donhang` WHERE `trangthai` IN (3, 4) GROUP BY YEAR(`ngaydat`), MONTH(`ngaydat`), `trangthai`";
 $data = mysqli_query($conn, $query);
 $result = array();

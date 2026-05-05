@@ -1,8 +1,8 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
-require 'vendor/autoload.php';
-$config =  require_once '../config/config.php';
+require __DIR__ . '/vendor/autoload.php';
+$config =  require_once __DIR__ . '/../config/config.php';
 $secret_key = $config['jwt_secret'];
 
 use Firebase\JWT\JWT;
@@ -39,8 +39,7 @@ if (isset($headers['Authorization'])){
 
 
 
-// Truy vấn danh sách sản phẩm với giamgia = 0
-$query = "SELECT * FROM `sanphammoi` WHERE `giamgia`= 0 ORDER BY id DESC";
+$query = "SELECT * FROM `sanphammoi` ORDER BY id DESC";
 
 // Thực thi truy vấn
 $data = mysqli_query($conn, $query);

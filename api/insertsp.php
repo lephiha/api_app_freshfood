@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Kiểm tra nếu các biến POST được thiết lập và không rỗng
 $tensp = isset($_POST['tensp']) ? $_POST['tensp'] : '';

@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $query = "SELECT * FROM `livestream`";
 $data = mysqli_query($conn, $query);
 $result = array();

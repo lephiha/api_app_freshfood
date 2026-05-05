@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $target_dir = "images/";
 $id = $_POST['id'];
 $name = $_POST['name'];

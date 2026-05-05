@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $room = $_POST['room'];
 $status = $_POST['status'];
 $title = $_POST['title'];

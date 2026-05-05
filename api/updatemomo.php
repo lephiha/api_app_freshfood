@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $token = $_POST['token'];
 $iddonhang = $_POST['id'];
 $query = 'UPDATE `donhang` SET `momo`="'.$token.'" WHERE `id` ='.$iddonhang;

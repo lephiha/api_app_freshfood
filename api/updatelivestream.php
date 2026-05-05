@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Kiểm tra sự tồn tại và hợp lệ của dữ liệu đầu vào
 if (!isset($_POST['id']) || !isset($_POST['status'])) {

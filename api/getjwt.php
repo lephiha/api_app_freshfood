@@ -1,8 +1,8 @@
 <?php
-require_once 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Firebase\JWT\JWT;
-$config =  require_once '../config/config.php';
+$config =  require_once __DIR__ . '/../config/config.php';
 
 $secret_key = $config['jwt_secret'];
 

@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Lấy dữ liệu từ client
 $id = isset($_POST['id']) ? intval($_POST['id']) : 0;

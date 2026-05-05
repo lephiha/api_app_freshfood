@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $id = $_POST['id'];
 $trangthai = $_POST['trangthai'];
 

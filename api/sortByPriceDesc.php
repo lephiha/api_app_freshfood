@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Chuẩn bị câu lệnh SQL sử dụng Prepared Statements
 $query = "SELECT * FROM `sanphammoi` ORDER BY CAST(giasp AS DECIMAL(10, 2)) DESC";

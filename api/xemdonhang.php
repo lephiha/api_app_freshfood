@@ -1,7 +1,7 @@
 <?php
-include "connect.php";
-require 'vendor/autoload.php';
-$config = require_once '../config/config.php';
+require_once __DIR__ . "/connect.php";
+require __DIR__ . '/vendor/autoload.php';
+$config = require_once __DIR__ . '/../config/config.php';
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 

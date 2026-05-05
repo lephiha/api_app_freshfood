@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 $query = "SELECT idsp,sanphammoi.tensp ,COUNT(`soluong`) As tong FROM `chitietdonhang` INNER JOIN sanphammoi ON sanphammoi.id = chitietdonhang.idsp GROUP BY `idsp`";
 $data = mysqli_query($conn, $query);
 $result = array();

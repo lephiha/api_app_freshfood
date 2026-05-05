@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Lấy danh sách sản phẩm và hình ảnh
 $query = 'SELECT id, hinhanh FROM `sanphammoi`';

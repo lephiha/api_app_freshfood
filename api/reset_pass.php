@@ -1,6 +1,6 @@
 <?php
 
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 if($_GET['key'] && $_GET['reset'])
 {
   $email=$_GET['key'];

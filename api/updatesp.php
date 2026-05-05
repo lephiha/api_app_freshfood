@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+require_once __DIR__ . "/connect.php";
 
 // Kiểm tra và làm sạch dữ liệu đầu vào
 $tensp = isset($_POST['tensp']) ? trim($_POST['tensp']) : '';
